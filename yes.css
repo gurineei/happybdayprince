@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#fff6f7,#ffe7ec,#fff7df);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.container{
+    max-width:1000px;
+    width:100%;
+}
+
+/* Title */
+
+.nupi{
+    position: absolute;
+    width: 110px;
+    left: 250px;
+
+    transform: rotate(15deg);
+}
+.kiss{
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+    top: 370px;
+    left: 50px;
+}
+
+.bday{
+    position:absolute;
+    width: 200px;
+    z-index: 10;
+    right: 120px;
+    top: 90px;
+    transform: rotate(-10deg);
+}
+h1{
+    font-family:'Pacifico', cursive;
+    font-size:3rem;
+    color:#2f4c77;
+    text-align:center;
+    margin-bottom:35px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.gallery img{
+    width:250px;
+    height:320px;
+    object-fit:cover;
+    background:white;
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transform:rotate(-4deg);
+    transition:.3s;
+}
+
+.gallery img:nth-child(2){
+    transform:rotate(3deg);
+}
+
+.gallery img:nth-child(3){
+    transform:rotate(-2deg);
+}
+
+.gallery img:hover{
+    transform:scale(1.05) rotate(0deg);
+}
+
+/* Letter */
+
+/* Letter */
+
+.letter{
+    position: relative;
+    background:#fffdf7;
+    padding:50px;
+    border-radius:20px;
+
+    /* Makes it look like stationery */
+    border:2px dashed #f3c5cf;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    line-height:2;
+}
+
+/* Small heart in the corner */
+.letter::before{
+    content:"♡";
+    position:absolute;
+    top:18px;
+    right:25px;
+    font-size:2rem;
+    color:#f7a7bb;
+}
+
+.letter h2{
+    font-family:'Pacifico', cursive;
+    color:#98add4;
+    margin-bottom:25px;
+    font-size:2.2rem;
+}
+
+.letter p{
+    font-family:'Patrick Hand', cursive;
+    font-size:1.5rem;
+    color:#5c5c5c;
+    letter-spacing:.5px;
+    line-height:1.8;
+}
+
+.secret-letter{
+    margin-top:50px;
+    background:#fff;
+    border:2px dashed #f3c5cf;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.secret-letter summary{
+    cursor:pointer;
+    font-family:'Pacifico', cursive;
+    color:#98add4;
+    font-size:1.5rem;
+}
+
+.secret-letter p{
+    margin-top:20px;
+    font-family:'Patrick Hand', cursive;
+    font-size:1.4rem;
+    line-height:1.8;
+}
